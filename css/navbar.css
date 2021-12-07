@@ -1,0 +1,34 @@
+body {
+  padding-bottom: 20px;
+}
+
+
+
+.navbar {
+  margin-bottom: 20px;
+  background-color: "#4A6FA5"; 
+  
+}
+
+
+.navbar-custom {
+    background-color: #FFFFFF; 
+    
+
+}
+
+
+/* changed the color to be brighter pre-hover */
+
+.navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: rgba(146,197,252,2);
+        }
+
+.footer, .push {
+    height:  25px;
+    text-align: left;
+    margin: 20x;
+    padding-left: 20px;
+
+}
