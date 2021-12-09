@@ -32,3 +32,9 @@ body {
     padding-left: 20px;
 
 }
+
+.sticky_footer {
+    height:  15px;
+    text-align: center;
+    color: #ffffff;
+}
