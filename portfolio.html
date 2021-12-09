@@ -10,6 +10,10 @@
 
  <!-- Slideshow container -->
 <style>
+
+
+
+
 * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
@@ -21,7 +25,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons. Added the webkit etc. at the bottom as requested by validator. */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -54,7 +58,41 @@ img {vertical-align: middle;}
   background-color: #f1f1f1;
   color: black;
 }
-</style>
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(29,91,165,.65) !important; 
+
+}
+
+</style>  
 
 
 
@@ -130,26 +168,73 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
   <div class="mySlides1">
     <img src="assets/img/1637Letchworth5x3.jpg" style="width:100%" alt="Park">
+    <p>Letchworth State Park</p>
   </div>
 
   <div class="mySlides1">
     <img src="assets/img/6718Fog.jpeg" style="width:100%" alt="Fog">
+    <p>Caswell Fog</p>
   </div>
 
   <div class="mySlides1">
-    <img src="assets/img/weeStinkyUpClose.jpg" style="width:100%" alt="Plant">
+    <img src="assets/img/Ducklings.jpg" style="width:100%" alt="Ducklings">
+    <p>Ducklings</p>
   </div>
 
   <div class="mySlides1">
     <img src="assets/img/bigpic.jpg" style="width:100%" alt="Party">
+    <p>Dragon Day, Cornell, featured in an issue of Cornell Alumni Magazine</p>
+  </div>
+
+  <div class="mySlides1">
+    <img src="assets/img/DragonGirl13 9856.jpg" style="width:100%" alt="Little Girl">
+    <p>Dragon Girl, Cornell Dragon Day</p>
   </div>
 
   <div class="mySlides1">
     <img src="assets/img/Buds042113.jpg" style="width:100%" alt="Buds">
+    <p>Spring Buds</p>
   </div>
 
   <div class="mySlides1">
     <img src="assets/img/1229ADWhitehousemoon.jpg" style="width:100%" alt="Moon">
+    <p>A D Whitehouse, Cornell Campus</p>
+  </div>
+
+   <div class="mySlides1">
+    <img src="assets/img/FoxKit.jpg" style="width:100%" alt="Fox Kit">
+    <p>Fox Kits</p>
+  </div>
+
+   <div class="mySlides1">
+    <img src="assets/img/Tree.jpg" style="width:100%" alt="Tree">
+    <p>Tree</p>
+  </div>
+
+  <div class="mySlides1">
+    <img src="assets/img/ScannedDolly3.jpg" style="width:100%" alt="Sheep">
+    <p>"Dolly 3"</p>
+  </div>
+
+   <div class="mySlides1">
+    <img src="assets/img/Bunny.jpg" style="width:100%" alt="Bunny">
+    <p>Bunny</p>
+  </div>
+
+  <div class="mySlides1">
+    <img src="assets/img/flowerschurchwindow_9408.jpg" style="width:100%" alt="Window">
+    <p>"Window"</p>
+  </div>
+
+  <div class="mySlides1">
+    <img src="assets/img/redwhitebleuwine.jpg" style="width:100%" alt="Wine and Cheese">
+    <p>Featured in Wine and Cheese Section of Cornell Alumni Magazine</p>
+  </div>
+
+
+  <div class="mySlides1">
+    <img src="assets/img/WeeStinkyCorpsePlant7984.jpg" style="width:100%" alt="Corpse Plant">
+    <p>"Wee Stinky" (Corpse Plant) featured in Cornell Alumni Magazine</p>
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -163,38 +248,52 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
   <div class="mySlides2">
     <img src="assets/img/MA17Cover.jpg" style="width:100%" alt="MA17 cover">
+    <p>Cornell Alumni Magazine Cover MA 2017</p>
   </div>
 
   <div class="mySlides2">
     <img src="assets/img/WCMCovermicrobestestd.jpg" style="width:100%" alt="image">
-  </div>
+   <p>Illustration for potential cover for Cornell Weill Medicine</p>
+</div>
 
    <div class="mySlides2">
     <img src="assets/img/SO12Cover.jpg" style="width:100%" alt="SO12Cover">
+    <p>Cornell Alumni Magazine Cover SO 2012</p>
   </div>
 
   <div class="mySlides2">
     <img src="assets/img/JA14Cover.jpg" style="width:100%" alt="JA14Cover">
+    <p>Cornell Alumni Magazine Cover JA 2014</p>
   </div>
 
   <div class="mySlides2">
     <img src="assets/img/SO14Cover.jpg" style="width:100%" alt="SO14Cover">
+    <p>Cornell Alumni Magazine Cover SO 2014</p>
   </div>
 
   <div class="mySlides2">
     <img src="assets/img/Candide.jpg" style="width:100%" alt="Candide Poster">
+    <p>Candide Poster for Ithaca Savoyards</p>
   </div>
 
   <div class="mySlides2">
     <img src="assets/img/maizePoster.jpg" style="width:100%" alt="Maize Poster">
+    <p>Maize Poster</p>
   </div>
 
 <div class="mySlides2">
     <img src="assets/img/feastofCarols.jpg" style="width:100%" alt="CVE Poster">
+    <p>Syracuse Vocal Ensemble Seasonal Concert Poster</p>
   </div>
 
   <div class="mySlides2">
     <img src="assets/img/Scotland.jpg" style="width:100%" alt="Scotland Poster">
+    <p>Cayuga Vocal Ensemble Scottish Concert Poster</p>
+  </div>
+
+  <div class="mySlides2">
+    <img src="assets/img/IsntItRomanticCVE.jpg" style="width:100%" alt="CVE Concert">
+    <p>CVE Concert Poster</p>
   </div>
 
 
@@ -228,7 +327,7 @@ function showSlides(n, no) {
 
 
 
-<footer class="footer">
+<footer class="sticky_footer">
     Lisa Frank 2021
   </footer>
 
